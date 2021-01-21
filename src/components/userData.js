@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../assets/dataFiles/dataList";
+import "./userData.css";
 
 const LearningList = () => {
   const [learning, setlearning] = useState(data);
@@ -15,9 +16,9 @@ const LearningList = () => {
         const { Id, level, text } = learn;
 
         return (
-          <div key={Id} className="item">
-            <h4>{level}</h4>
-            {/* <h4>{text}</h4>npm start */}
+          <div key={Id} className="mainDiv">
+            <h2>{level}</h2>
+            <p>{text}</p>
             <button onClick={() => removeItem(Id)}>remove</button>
           </div>
         );
