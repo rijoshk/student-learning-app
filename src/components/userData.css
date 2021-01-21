@@ -50,7 +50,7 @@
 }
 
 .mainDiv {
-  border: 2px outset red;
+  border: 2px;
   justify-content: space-between;
   max-width: var(--fixed-width);
   background: var(--clr-white);
@@ -58,4 +58,12 @@
   margin: 2rem auto;
   align-items: center;
   border-radius: var(--radius);
+}
+
+.mainDiv button {
+  background: var(clr-primary-5);
+  border-color: #008cba;
+  color: var(--clr-primary-5);
+  letter-spacing: var(--spacing);
+  cursor: pointer;
 }
