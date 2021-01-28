@@ -1,8 +1,9 @@
 import React from "react";
-import LearningList from "./components/userData";
+// import LearningList from "./components/userData";
+import AddNumbers from "./components/addition";
 
 function App() {
-  return <LearningList></LearningList>;
+  return <AddNumbers></AddNumbers>;
 }
 
 export default App;
