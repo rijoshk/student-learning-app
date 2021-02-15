@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getQuestion, getPlaceValueofNumber } from "utils/utils";
 import data from "assets/dataFiles/placeValues.json";
 import { useDispatch } from "react-redux";
+import { ActionTypes } from "utils/constants";
 
 const PlaceValuesComp = () => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const PlaceValuesComp = () => {
   const validateAnswer = () => {
     var res = getPlaceValueofNumber(question.number, question.placeVal);
     dispatch({
-      type: "ADD_QUESTION_ANSWERED",
+      type: ActionTypes.ADD_QUESTION_ANSWERED,
       payload: {
         answeredCount: 1,
       },
@@ -36,7 +37,7 @@ const PlaceValuesComp = () => {
 
     if (parseInt(answer) === parseInt(res)) {
       dispatch({
-        type: "ADD_SCORE",
+        type: ActionTypes.ADD_SCORE,
         payload: {
           score: 1,
         },

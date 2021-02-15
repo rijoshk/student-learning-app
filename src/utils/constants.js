@@ -1,0 +1,4 @@
+export const ActionTypes = {
+  ADD_SCORE: "ADD_SCORE",
+  ADD_QUESTION_ANSWERED: "ADD_QUESTION_ANSWERED",
+};

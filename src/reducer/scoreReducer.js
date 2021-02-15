@@ -1,3 +1,5 @@
+import { ActionTypes } from "utils/constants";
+
 const initialState = {
   score: 0,
 };
@@ -6,7 +8,7 @@ const scoreReducer = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case "ADD_SCORE":
+    case ActionTypes.ADD_SCORE:
       let newScore = state.score + payload.score;
       return { ...state, score: newScore };
 
