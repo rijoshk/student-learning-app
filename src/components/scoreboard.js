@@ -18,7 +18,7 @@ const Scoreboard = () => {
       <div>{score}</div>
       <div>Time elapsed</div>
       <div>
-        <CountDownTimer minutes="05"></CountDownTimer>
+        <CountDownTimer minutes="01"></CountDownTimer>
       </div>
     </div>
   );

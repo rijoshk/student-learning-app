@@ -1,0 +1,7 @@
+[
+    {
+        "Id": 1,
+        "subject": "Math",
+        "question": "In {number}, which digit is in {placeVal} place"
+    }
+]

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import AddControls from "./addControl";
-import Scoreboard from "./scoreboard";
-import ScoreContextProvider from "../context";
-import data from "../assets/dataFiles/Addition.json";
+import AddControls from "components/addControl";
+import Scoreboard from "components/scoreboard";
+import ScoreContextProvider from "context";
+import data from "assets/dataFiles/Addition.json";
+import "components/userData.css";
 
 const AddNumbers = () => {
   const [addData] = useState(data);
@@ -21,7 +22,7 @@ const AddNumbers = () => {
               <h2>{item.subject}</h2>
               <p>{item.question}</p>
             </div>
-            <div>
+            <div className="rowC">
               <ScoreContextProvider>
                 <AddControls element={item}></AddControls>
                 <Scoreboard></Scoreboard>
